@@ -30,8 +30,8 @@ alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
-# Update Homebrew, npm, and their installed packages
-alias update='brew update; brew upgrade; brew cleanup; npm install npm -g; npm update -g'
+# Update Homebrew installed packages
+alias update='brew update; brew upgrade; brew cleanup'
 
 # IP addresses
 alias localip="ipconfig getifaddr en0"
@@ -43,12 +43,12 @@ alias ifactive="ifconfig | pcregrep -M -o '^[^\t:]+:([^\n]|\n\t)*status: active'
 # Recursively delete `.DS_Store` files
 alias cleanupstore="find . -type f -name '*.DS_Store' -ls -delete"
 
-# Lock the screen (when going AFK)
-alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
-
 # Reload the shell (i.e. invoke as a login shell)
 alias reload="exec ${SHELL} -l"
 
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
+
+# Print current date in ISO format
+alias isodate="date '+%Y-%m-%dT%H:%M:%S'"
 
