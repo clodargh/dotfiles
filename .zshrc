@@ -18,3 +18,8 @@ fi
 PROMPT='%#%F{8}>%f'
 RPROMPT='%~ %F{green}%n🤖%m%f %F{cyan}%*%f'
 
+# Scroll through history search with arrow keys
+
+bindkey "^[[A" history-search-backward
+bindkey "^[[B" history-search-forward
+
