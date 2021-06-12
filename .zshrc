@@ -15,6 +15,6 @@ fi
 
 # Simple theme to put most of the prompt on the right
 
-PROMPT='%# '
+PROMPT='%#%F{8}>%f'
 RPROMPT='%~ %F{green}%n🤖%m%f %F{cyan}%*%f'
 
